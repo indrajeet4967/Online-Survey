@@ -11,13 +11,13 @@ pipeline {
     stages {
         stage('Checkout Code') {
             steps {
-                git 'https://github.com/your-repo/your-app.git'
+                git 'https://github.com/indrajeet4967/Online-Survey.git'
             }
         }
 
         stage('Build with Maven') {
             steps {
-                sh 'mvn clean package'
+                bat 'mvn clean package'
             }
         }
 
