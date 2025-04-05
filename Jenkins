@@ -8,12 +8,12 @@ pipeline {
         NEXUS_CREDENTIALS = 'nexus-credentials'
     }
 
-    stages {
+    /*stages {
         stage('Checkout Code') {
             steps {
                 git 'https://github.com/indrajeet4967/Online-Survey.git'
             }
-        }
+        }*/
 
         stage('Build with Maven') {
             steps {
